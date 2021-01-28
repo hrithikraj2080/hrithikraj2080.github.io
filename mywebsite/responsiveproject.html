@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delivery services</title>
+    lin
+    <style>
+        .container{
+            background: url("image3.jpg");
+            background-size: cover;
+            padding: 60px;
+            
+            
+            
+        }
+        #head{
+            text-align: center;
+            font: bolder;
+            color: crimson;
+            text-decoration: underline;
+        }
+        .item{
+            display: inline-block;
+            font-size: 20px;
+            border: 2px solid rgb(153, 22, 85);
+            padding: 10px;
+            background-color:crimson;
+        }
+        .container1{
+            display: grid;
+            grid-template-columns:repeat(4,auto) ;
+            grid-gap: 0.5rem;
+            font-size: 1.8rem;
+        } 
+        .box{
+            border: 2px solid red;
+            padding: 30px;
+            margin: 5px;
+            /* background-color: rgb(54, 40, 54); */
+        }
+        .box:first-child{
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3;
+            
+        } 
+        .box:nth-child(2){
+            grid-row: 1 / span 3;
+        }
+        
+        
+        
+        
+        #box-1{
+            background: url('image1.jpg');
+            background-size: 50vh;
+          
+        } 
+        #box-2{
+            background: url('image2.jpg');
+            background-size: 60vh;
+            text-align: center;
+            font: bolder;
+        }
+        .btn{
+            font-size: 2.5rem;
+            background-color: crimson;
+            display: flex;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid crimson;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .container2{
+            display: flex;
+            
+            
+            justify-content: center;
+            flex-direction: column;
+        }
+        .sitemap{
+            padding: 20px;
+            border: 2px solid rgb(5, 15, 104);
+            margin: 5px;
+            background-color: rgb(39, 39, 133);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+
+        }
+        #para{
+            font-size: 1.5rem;
+            text-align: center;
+            color: crimson;
+        }
+        .item:hover{
+            background-color: rgb(61, 19, 40);
+        }
+        .btn:hover{
+            background-color: rgb(61, 19, 40);
+        }
+        
+        
+        
+    </style>
+</head>
+
+<body> 
+    <div class="container">
+        <ul class='navbar'>
+            <li class="item"><a href="gym.html"target="_blank">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="contactus.html"target="_blank">Contact us</a></li>
+            
+        </ul>
+        <h1 id="head">Discover the best food & drinks in Delhi NCR</h1>
+    </div>
+    
+    <div class="container1">
+        <div class="box" id="box-1">
+            <p>Order the best fast-food,to your doorstep.
+     
+            </p>
+            <button class="btn">Order now</button>
+        </div>
+        <div class="box" id="box-2">Go out for a meal
+            <button class="btn">Call us</button>
+        </div>
+        
+    </div>
+    
+    <h1 id="head">Collections</h1>
+    <p id="para">Explore curated lists of top restaurants,cafes,pulbs,and bars in DelhiNCR based on trends</p>
+    <p id="para">Popular localities in and around delhi</p>
+    <div class="container2">
+        <div class="sitemap" id="site-1">Sector 29,Gurgaon(204 places)</div>
+        <div class="sitemap" id="site-2">Sector 18,Noida(264 places)</div>
+        <div class="sitemap" id="site-3">Saket(563 places)</div>
+        <div class="sitemap" id="site-4">Dlf phase4(605 places)</div>
+        <div class="sitemap" id="site-5">Dlf cyber security(191 places)</div>
+        <div class="sitemap" id="site-6">Indirapuram(1252 places)</div>
+    </div>
+    
+    
+</body>
+</html>
